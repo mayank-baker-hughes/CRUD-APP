@@ -1,0 +1,33 @@
+<div class="container">
+<table>
+
+    <thead>
+     <th>id</th>
+     <th>name</th>
+     <th>email </th>
+     <th>age</th>
+     <th>dob</th>
+     <th>Delete</th>
+     <th>Edit</th>
+
+    </thead>
+    <tbody *ngFor = "let student of studentsData">
+        <td>{{student.id}}</td>
+        <td>{{student.name===null?'-':student.name}}</td>
+        <td>{{student.email===null?'-':student.email}}</td>
+        <td>{{student.age===null?'-':student.age}}</td>
+        <td>{{student.dob===null?'-':student.dob}}</td>
+
+        <td>
+            <button id="deletebtn" mat-raised-button color="warn" (click)="deleteStudentById(student.id)">Delete</button>
+        </td>
+
+        <td> 
+            <button id="deletebtn" mat-raised-button color="primary" (click)="getUserById(student.id)">Edit</button>             
+        </td>
+            
+
+    </tbody>
+</table>
+
+</div>

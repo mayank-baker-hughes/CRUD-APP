@@ -1,0 +1,29 @@
+.container{
+    padding :5px;
+    height: auto;
+    width: auto;
+
+    margin: auto;
+    text-align: center;
+    border: 1px solid  red;
+}
+
+.container table{
+    
+    text-align: center;
+    border: 1px solid gray;
+}
+
+.container table th{
+    background-color: grey;
+}
+
+.container table th,td{
+    padding: 12px;
+    margin-left: 5px;
+    font-size: larger;
+    border-radius: 5%;
+    border: 1px solid gray;
+}
+
+
