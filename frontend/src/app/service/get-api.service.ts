@@ -35,6 +35,10 @@ export class GetApiService {
 
   }
 
+  updateStudent(id:any,user:any):Observable<any>{
+    return this.http.put(`${this.getStudentUrl}/${id}`,user,{responseType: 'text'})
+  }
+
 
   
 }

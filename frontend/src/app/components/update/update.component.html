@@ -1,0 +1,39 @@
+
+<form  [formGroup]="studentUpdateForm"  (ngSubmit)="updateUserById()">
+
+    <mat-form-field appearance="outline" color="accent" class="custom-form-field">
+
+        <mat-label>Name</mat-label>
+
+        <input matInput type="text" formControlName="name" placeholder="Enter name" required>
+
+    </mat-form-field>
+
+    <br/>
+
+    <mat-form-field appearance="outline" color="accent" class="custom-form-field">
+        <mat-label>Email</mat-label>
+
+        <input matInput type="email" formControlName="email" placeholder="Enter email" required>
+    </mat-form-field>
+    <br/>
+
+
+    <mat-form-field appearance="outline" color="accent" class="custom-form-field">
+        <mat-label>Age</mat-label>
+        <input matInput type="text" formControlName="age" placeholder="Enter age" required>
+
+    </mat-form-field>
+    <br/>
+
+    <mat-form-field appearance="outline" color="accent" class="custom-form-field">
+        <mat-label>DOB</mat-label>
+        <input matInput type="date" formControlName="dob" placeholder="Enter dob" required>
+
+    </mat-form-field>
+    <br/>
+
+    <button mat-raised-button color="primary">Submit</button>
+
+
+</form>

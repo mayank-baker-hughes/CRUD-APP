@@ -19,11 +19,12 @@
         <td>{{student.dob===null?'-':student.dob}}</td>
 
         <td>
-            <button id="deletebtn" mat-raised-button color="warn" (click)="deleteStudentById(student.id)">Delete</button>
-        </td>
+            <a routerLink="edit/{{student.id}}"  routerLinkActive  mat-raised-button color="primary" > Edit</a>
+            <router-outlet></router-outlet>
+       
 
-        <td> 
-            <button id="deletebtn" mat-raised-button color="primary" (click)="getUserById(student.id)">Edit</button>             
+       
+            <button id="deletebtn" mat-raised-button color="warn" (click)="deleteStudentById(student.id)">Delete</button>             
         </td>
             
 

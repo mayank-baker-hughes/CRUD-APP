@@ -4,14 +4,14 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http'
 import { CommonModule } from '@angular/common';
 import {MatButtonModule} from '@angular/material/button'
-import { RouterOutlet } from '@angular/router';
+import { RouterOutlet ,ActivatedRoute,RouterModule} from '@angular/router';
 
 
 
 @Component({
   selector: 'app-students',
   standalone: true,
-  imports: [FormsModule,HttpClientModule,CommonModule,MatButtonModule,RouterOutlet],
+  imports: [FormsModule,HttpClientModule,CommonModule,MatButtonModule,RouterModule,RouterOutlet],
   templateUrl: './students.component.html',
   styleUrl: './students.component.css',
   providers:[GetApiService]

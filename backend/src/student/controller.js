@@ -88,9 +88,15 @@ const updateStudentDetails = (req,res)=>{
         
         pool.query(queries.updateStudentDetails,[id,name,email,age,dob],(error,results)=>{
 
-            if(error) throw error;
+          
 
-            res.status(200).send('USer details updated successfully')
+            try{
+                res.status(200).send('USer details updated successfully')
+            }
+
+            catch(error){
+                console.log("Error occured",error)
+            }
 
         })
        }
